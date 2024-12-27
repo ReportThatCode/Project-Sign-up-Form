@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form coockie</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main class="main">
+
+       
+      
+        <div class="container-img">
+            <img src="src/mainPhoto.jpg" alt="cocki">
+            <h1>S.O.S FOOT</h1>
+            <span>Credits:  Foto de <a href="https://unsplash.com/es/@foodess?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Food Photographer | Jennifer Pallian</a> en <a href="https://unsplash.com/es/fotos/foto-de-primer-plano-de-galletas-horneadas-OfdDiqx8Cz8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></span>
+        </div>
+        <div class="main-content">
+            <h2>This is not a real service! But sign up to subscribe and receive cookies daily!<br>Yes, you heard right! <span class="des">DAILY!.</span></h2>
+            <p>You just have to fill out the form.</p>
+            
+            
+            <form action="#" method="post" novalidate>
+
+                <fieldset>
+                    <legend>fill out this form</legend>
+                        <div class="container-inputs">
+                            <div class="content-input">
+                                <label for="fistName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required maxlength="15" class="inputs">
+                                <span class="error"></span> 
+                            </div>
+                            <div class="content-input">
+                                <label for="LastName">Last Name</label>
+                                <input type="text" id="LastName" name="LastName" required maxlength="15" class="inputs">
+                                <span class="error"></span> 
+                            </div>
+                            <div class="content-input">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="EmailExample@gmail.com" required class="inputs"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                <span class="error"></span> 
+                            </div>
+                            <div class="content-input">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone"  required class="inputs" maxlength="15"> 
+                                <span class="error"></span>
+                            </div>
+                        
+                            <div class="content-input">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" required class="inputs" minlength="4" maxlength="15">
+                                <span class="error"></span> 
+                            </div>
+                            <div class="content-input">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" required class="inputs" minlength="4" maxlength="15"> 
+                                <span class="error"></span>
+                            </div>
+                        </div>
+                        <div class="final-content-form">
+                            <button type="submit">Create Account</button>
+                            <span>Already you have account? <a href="#">Log in</a></span>
+                        </div>
+                </fieldset>
+
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
